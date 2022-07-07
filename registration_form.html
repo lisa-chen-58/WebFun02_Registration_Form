@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Registration Form</title>
+</head>
+<body class="bg-light text-primary">
+    <h1>Registration Form</h1>
+    <form action = "/postMe">
+
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" aria-describedby="firstNameDes" placeholder="Enter First name">
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" aria-describedby="lastNameDes" placeholder="Enter Last name">
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailDes" placeholder="Enter Email">
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" aria-describedby="passwordDes" placeholder="Enter Password">
+            <small id="passwordDes" class="form-text text-muted">Give me power!</small>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password</label>
+            <input type="password" class="form-control" id="confirmPassword" aria-describedby="confirmPasswordDes" placeholder="Confirm Password">
+        </div>
+        <div class="form-group">
+            <label for="birthday">Birthday</label>
+            <input type="date" class="form-control" id="birthday" aria-describedby="birthdayDes" placeholder="Enter Birthday">
+        </div>
+        <div class="form-group">
+            <div>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label><br>
+            </div>
+            <div>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label><br>
+            </div>
+            <div>
+                <input type="radio" id="nonBinary" name="gender" value="Non-binary">
+                <label for="nonBinary">Non-binary</label>
+            </div>
+            <div>
+                <input type="radio" id="nonAnswer" name="gender" value="I prefer not to answer">
+                <label for="nonAnswer">I prefer not to answer</label><br>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="description">A short description about myself:</label>
+            <textarea class="form-control" id="description" name="description" rows="4" cols="50">Enter description here</textarea>
+        </div>
+        <div class="form-group">
+            <label for="languages">Favorite Language:</label>
+            <select id="languages" name="languages">
+                <option value="Javascript">Javascript</option>
+                <option value="Python">Python</option>
+                <option value="Java" selected>Java</option>
+                <option value="C++">C++</option>
+            </select>
+            <input type="submit">
+        </div>
+        <div class="form-group">
+            <input checked type="checkbox" id="updates" name="updates" value="Update">
+            <label for="updates">Yes, I would like to receive periodic email updates</label>
+        </div>
+        <button type="submit" class="form-group btn btn-primary">Create Account</button>
+        <small id="submit" class="form-text text-muted">* Indicates a required field</small>
+    
+    </form>
+
+</body>
+</html>
