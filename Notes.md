@@ -1,4 +1,4 @@
-This is an assignment for Coding Dojo.
+This is an assignment for Coding Dojo
 
 ### Objectives:
 
